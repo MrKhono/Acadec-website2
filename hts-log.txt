@@ -1,0 +1,27 @@
+HTTrack3.49-2 launched on Tue, 06 Feb 2024 12:08:04 at http://https://hubhtml.liquid-themes.com/index-digital-hub.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/*
+(webhttrack -q -%i -w http://https://hubhtml.liquid-themes.com/index-digital-hub.html -O "/Users/macbook/websites/Acadec website" -n -%P -N0 -s2 -p7 -D -a -K0 -c4 -%k -A25000 -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -%s -%u )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+12:09:09	Error: 	"Not Found" (404) at link https://fonts.googleapis.com/ (from https://hubhtml.liquid-themes.com/index-digital-hub.html)
+12:09:10	Error: 	"Not Found" (404) at link https://fonts.gstatic.com/ (from https://hubhtml.liquid-themes.com/index-digital-hub.html)
+12:10:06	Warning: 	Link https://hubhtml.liquid-themes.com/cdn-cgi/l/email-protection not scanned (follow robots meta tag)
+12:12:04	Error: 	"Not Found" (404) at link https://hubhtml.liquid-themes.com/banner (from https://hubhtml.liquid-themes.com/index-company.html)
+12:12:27	Warning: 	HTML file (94592 bytes) retransferred due to lack of cache: https://hubhtml.liquid-themes.com/index-company.html
+12:12:29	Error: 	"Not Found" (404) at link https://hubhtml.liquid-themes.com/AppleWebKit/ (from https://hubhtml.liquid-themes.com/assets/vendors/fresco/js/fresco.js)
+12:12:29	Error: 	"Not Found" (404) at link https://hubhtml.liquid-themes.com/Chrome/ (from https://hubhtml.liquid-themes.com/assets/vendors/fresco/js/fresco.js)
+12:12:29	Error: 	"Not Found" (404) at link https://hubhtml.liquid-themes.com/CrMo/ (from https://hubhtml.liquid-themes.com/assets/vendors/fresco/js/fresco.js)
+12:12:29	Error: 	"Not Found" (404) at link https://hubhtml.liquid-themes.com/IEMobile/ (from https://hubhtml.liquid-themes.com/assets/vendors/fresco/js/fresco.js)
+12:12:29	Error: 	"Not Found" (404) at link https://hubhtml.liquid-themes.com/${window.location.href} (from https://hubhtml.liquid-themes.com/assets/vendors/animated-blob/liquidAnimatedBlob.min.js)
+12:12:29	Error: 	"Not Found" (404) at link https://hubhtml.liquid-themes.com/GET (from https://hubhtml.liquid-themes.com/assets/vendors/particles.min.js)
+12:12:29	Error: 	"Not Found" (404) at link https://hubhtml.liquid-themes.com/Error pJS - No image.src (from https://hubhtml.liquid-themes.com/assets/vendors/particles.min.js)
+12:12:29	Error: 	"Not Found" (404) at link https://hubhtml.liquid-themes.com/${this.getCurrentSrc( (from https://hubhtml.liquid-themes.com/assets/js/theme.min.js)
+12:12:29	Error: 	"Not Found" (404) at link https://hubhtml.liquid-themes.com/ (from https://hubhtml.liquid-themes.com/assets/js/theme.min.js)
+12:12:29	Error: 	"Not Found" (404) at link https://hubhtml.liquid-themes.com/${this.bgUrl} (from https://hubhtml.liquid-themes.com/assets/js/theme.min.js)
+12:12:29	Error: 	"Not Found" (404) at link https://hubhtml.liquid-themes.com/${this.isRowBg} (from https://hubhtml.liquid-themes.com/assets/js/theme.min.js)
+
+HTTrack Website Copier/3.49-2 mirror complete in 4 minutes 25 seconds : 246 links scanned, 264 files written (18735984 bytes overall) [10783742 bytes received at 40693 bytes/sec], 2612347 bytes transferred using HTTP compression in 118 files, ratio 27%, 4.6 requests per connection
+(14 errors, 2 warnings, 0 messages)
