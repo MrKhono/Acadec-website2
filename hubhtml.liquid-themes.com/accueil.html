@@ -24,6 +24,10 @@
     <link rel="preconnect" href="../fonts.gstatic.com/index.html" crossorigin />
     <link href="../fonts.googleapis.com/css2e9d0.css?family=Montserrat:wght@400;500;700&amp;display=swap"
         rel="stylesheet" />
+
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer> </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+       
     <title>Acadec</title>
 </head>
 
@@ -71,7 +75,7 @@
                     <!-- <a href="#consultation" class="btn btn-naked leading-16" rel="nofollow"
                         data-localscroll="true"><span class="btn-txt" data-text="Consultation">Consultation</span></a> -->
                     <div class="pl-20 ml-20 border-left text-white-10">
-                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiYl4uZvdCEAxV8Q6QEHeXsA2UQFnoECBYQAQ&url=https%3A%2F%2Fapps.apple.com%2Fus%2Fapp%2Facadec%2Fid6448538182&usg=AOvVaw16iW7VzdccIcTbdCaUgwvR&opi=89978449" class="btn btn-naked leading-16" rel="nofollow" data-localscroll="true"><span
+                        <a href="#" id="detecter" class="btn btn-naked leading-16" rel="nofollow" data-localscroll="true"><span
                                 class="btn-txt" data-text="Contact us">Télécharger l'app</span></a>
                     </div>
                     <div class="pl-20 ml-20 border-left border-white-10 ld-module-search lqd-module-search-slide-top items-center"
@@ -138,6 +142,12 @@
                                                 </path>
                                             </svg> </span>
                                     <ul class="nav-item-children">
+                                        <li>
+                                            <a href="https://acadec.net" >Application</a>
+                                        </li>
+                                        <li>
+                                            <a href="page-company-what-we-do.html">Logement</a>
+                                        </li>
                                         <li>
                                             <a href="page-company-what-we-do.html">Consultation</a>
                                         </li>
@@ -226,7 +236,7 @@
             <div id="lqd-contents-wrap">
 
                 <section class="lqd-section banner relative bg-center bg-cover transition-all" id="banner" style="
-              background-image: url('assets/images/city-committed-education-collage-concept.jpg');
+              background-image: url('https://img.freepik.com/free-photo/colleagues-studying-university-library_23-2148844691.jpg?t=st=1709553077~exp=1709556677~hmac=c04056344ee5c8fd0fa05d427d6a46372c9369b9e8d64be9c6cd693365985035&w=1800');
             ">
                     <div class="background-overlay transition-all bg-green-100 opacity-100"></div>
                     <div class="container">
@@ -332,7 +342,7 @@
                                                     <p role="status" aria-live="polite" aria-atomic="true"></p>
                                                 </div>
                                                 <form action="https://hubhtml.liquid-themes.com/assets/php/mailer.php"
-                                                    method="post" class="lqd-cf-form" novalidate="novalidate"
+                                                    method="POST" class="lqd-cf-form" novalidate="novalidate"
                                                     data-status="init">
                                                     <div class="row">
                                                         <div class="col col-12 py-0">
@@ -363,27 +373,18 @@
                                                                         </ul>
                                                                     </div>
                                                                 </div>
-                                                                <span tabindex="0" id="ui-id-1-button" role="combobox"
-                                                                    aria-expanded="false" aria-autocomplete="list"
-                                                                    aria-owns="ui-id-1-menu" aria-haspopup="true"
-                                                                    class="ui-selectmenu-button ui-selectmenu-button-closed ui-corner-all ui-button ui-widget text-black text-14 font-normal bg-yellow-100"><span
-                                                                        class="ui-selectmenu-icon ui-icon ui-icon-triangle-1-s"></span>
-                                                                    <span class="ui-selectmenu-text px-2em">Comment pouvons-nous vous aider ?</span></span>
+                                                                <textarea class="text-black px-2em text-14 font-normal bg-yellow-100" name="" id="" cols="20" rows="5">
+                                                                </textarea>
                                                             </div>
                                                         </div>
+                                                        
                                                         <div class="col col-12 py-0">
-                                                            <span class="lqd-form-control-wrap"
-                                                                data-name="acceptance"><span
-                                                                    class="lqd-cf-form-control lqd-cf-acceptance"><span
-                                                                        class="lqd-cf-list-item"><label><input
-                                                                                type="checkbox" name="acceptance"
-                                                                                value="1" aria-invalid="false" />
-                                                                            <span class="lqd-cf-list-item-label">J'accepte les conditions d'utilisation.</span></label></span></span></span>
-                                                        </div>
-                                                        <div class="col col-12 py-0">
-                                                            <input type="submit"  value="Envoyer"
+                                                            <div class="g-recaptcha" data-sitekey="6Lf584opAAAAAG21dwO_S0Dn7BZBtFDZI5-c7E13"></div>
+                                                            <br/>
+                                                            <input  type="submit" name="ok" value="Envoyer"
                                                                 class="mb-0 font-bold text-secondary text-white bg-primary has-spinner text-16" />
                                                         </div>
+                                                        
                                                     </div>
                                                 </form>
                                                 <div class="lqd-cf-response-output"></div>
@@ -563,111 +564,6 @@
                 </section>
                 
 
-                <!-- <section class="lqd-section has-accordion pt-60 pb-120">
-                    <div class="container">
-                        <div class="row items-center">
-                            <div class="col col-12 col-xl-5" data-custom-animations="true"
-                                data-ca-options='{"animationTarget": ".animation-element", "duration" : 1800 , "delay" : 180 , "ease": "power4.out", "initValues": {"y": "35px", "opacity" : 0} , "animations": {"y": "0px", "opacity" : 1}}'
-                                data-localscroll="true" data-localscroll-options='{"itemsSelector":"a"}'>
-                                <div class="ld-fancy-heading relative animation-element">
-                                    <h2 class="ld-fh-element mb-0/5em inline-block relative">
-                                        leading the best marketing team.
-                                    </h2>
-                                </div>
-                                <div class="ld-fancy-heading relative animation-element">
-                                    <p class="ld-fh-element mb-2/5em inline-block relative">
-                                        We help our clients succeed by creating brand identities,
-                                        digital experiences, and print materials that communicate
-                                        clearly, achieve marketing.
-                                    </p>
-                                </div>
-                                <a href="#what-we-do"
-                                    class="btn btn-solid btn-md text-white font-bold btn-icon-right btn-hover-reveal text-16 text-secondary bg-primary rounded-4 animation-element"
-                                    target="_blank" rel="nofollow"><span class="btn-txt" data-text="learn more">En savoir plus</span>
-                                    <span class="btn-icon text-1/15em"><i aria-hidden="true"
-                                            class="lqd-icn-ess icon-md-arrow-round-forward"></i></span></a>
-                            </div>
-                            <div class="col col-12 col-xl-6 offset-xl-1" data-custom-animations="true"
-                                data-ca-options='{"animationTarget": ".animation-element", "duration" : 1800 , "delay" : 180 , "ease": "power4.out", "initValues": {"y": "35px", "opacity" : 0} , "animations": {"y": "0px", "opacity" : 1}}'>
-                                <div class="accordion accordion-lg accordion-side-spacing accordion-title-round accordion-expander-lg accordion-active-has-fill"
-                                    id="accordion-bg-title" role="tablist" aria-multiselectable="true">
-                                    <div class="accordion-item mb-30 panel animation-element active">
-                                        <div class="accordion-heading" role="tab">
-                                            <h4 class="accordion-title" id="heading-1">
-                                                <a class="text-16 font-bold leading-1/5em text-white rounded-4 py-1em px-1/5em bg-slate-100"
-                                                    role="button" data-bs-toggle="collapse" href="#collapse-1"
-                                                    aria-expanded="true" aria-controls="collapse-1"><span
-                                                        class="accordion-title-txt">First-class investment
-                                                        solutions</span>
-                                                    <span class="accordion-expander text-22"><i
-                                                            class="lqd-icn-ess icon-ion-ios-arrow-down"></i>
-                                                        <i class="lqd-icn-ess icon-ion-ios-arrow-up"></i></span></a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapse-1" class="accordion-collapse collapse show"
-                                            data-bs-parent="#accordion-bg-title" role="tabpanel"
-                                            aria-labelledby="heading-1">
-                                            <div class="pb-0 px-1/5em pt-1/5em">
-                                                Hub IT allows your business and technology computers
-                                                to store, transmit, analyze, and manipulate big data.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item mb-30 panel animation-element">
-                                        <div class="accordion-heading" role="tab">
-                                            <h4 class="accordion-title" id="heading-2">
-                                                <a class="collapsed text-16 font-bold leading-1/5em text-white rounded-4 py-1em px-1/5em bg-slate-100"
-                                                    role="button" data-bs-toggle="collapse" href="#collapse-2"
-                                                    aria-expanded="false" aria-controls="collapse-2"><span
-                                                        class="accordion-title-txt">Building the idea of future</span>
-                                                    <span class="accordion-expander text-22"><i
-                                                            class="lqd-icn-ess icon-ion-ios-arrow-down"></i>
-                                                        <i class="lqd-icn-ess icon-ion-ios-arrow-up"></i></span></a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapse-2" class="accordion-collapse collapse"
-                                            data-bs-parent="#accordion-bg-title" role="tabpanel"
-                                            aria-labelledby="heading-2">
-                                            <div class="pb-0 px-1/5em pt-1/5em">
-                                                <p>
-                                                    Hub IT allows your business and technology<br />computers
-                                                    to store, transmit, analyze,<br />and manipulate big
-                                                    data.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item panel animation-element">
-                                        <div class="accordion-heading" role="tab">
-                                            <h4 class="accordion-title" id="heading-3">
-                                                <a class="collapsed text-16 font-bold leading-1/5em text-white rounded-4 py-1em px-1/5em bg-slate-100"
-                                                    role="button" data-bs-toggle="collapse" href="#collapse-3"
-                                                    aria-expanded="false" aria-controls="collapse-3"><span
-                                                        class="accordion-title-txt">Business consultation for
-                                                        startups</span>
-                                                    <span class="accordion-expander text-22"><i
-                                                            class="lqd-icn-ess icon-ion-ios-arrow-down"></i>
-                                                        <i class="lqd-icn-ess icon-ion-ios-arrow-up"></i></span></a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapse-3" class="accordion-collapse collapse"
-                                            data-bs-parent="#accordion-bg-title" role="tabpanel"
-                                            aria-labelledby="heading-3">
-                                            <div class="pb-0 px-1/5em pt-1/5em">
-                                                <p>
-                                                    Hub IT allows your business and technology<br />computers
-                                                    to store, transmit, analyze,<br />and manipulate big
-                                                    data.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section> -->
-
                 <section class="lqd-section what-we-do my-50" id="what-we-do">
                     <div class="container">
                         <div class="row items-center">
@@ -679,7 +575,7 @@
                                                 class="lqd-imggrp-img-container inline-flex relative items-center justify-center w-50percent">
                                                 <figure class="w-full relative">
                                                     <img class="rounded-6" width="492" height="596"
-                                                        src="assets/images/demo/company/what-we-do-1.jpg"
+                                                        src="https://images.pexels.com/photos/935948/pexels-photo-935948.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                                                         alt="What We Do" />
                                                 </figure>
                                             </div>
@@ -692,7 +588,7 @@
                                                     class="lqd-imggrp-img-container inline-flex relative items-center justify-center w-55percent">
                                                     <figure class="w-full relative">
                                                         <img class="rounded-6" width="666" height="808"
-                                                            src="assets/images/demo/company/what-we-do-2.jpg"
+                                                            src="https://img.freepik.com/free-photo/front-view-people-working-office_23-2150697640.jpg?t=st=1709558514~exp=1709562114~hmac=e28db4a062da5f4ec69a2a1fa4f6a661d7680d7d5d39c18183c932884c65c1ec&w=900"
                                                             alt="What We Do" />
                                                     </figure>
                                                 </div>
@@ -748,13 +644,7 @@
                                             First-Class Investments
                                         </h3>
                                     </div>
-                                    <!-- <a href="#contact-modal"
-                                        class="btn btn-solid btn-md font-bold btn-icon-right text-white btn-hover-reveal text-16 text-secondary bg-primary rounded-4  animation-element"
-                                        data-lity="#contact-modal"><span class="btn-txt" data-text="Get a quote">Get a
-                                            quote</span>
-                                        <span class="btn-icon text-1/15em"><i aria-hidden="true"
-                                                class="lqd-icn-ess icon-md-arrow-round-forward"></i></span>
-                                    </a> -->
+                                    
                                 </div>
                             </div>
                         </div>
@@ -1186,17 +1076,7 @@
                                 </p>
                             </div>
                         </div>
-                        <!-- <div class="col col-12 col-md-8 text-end sm:text-start">
-                            <div class="lqd-fancy-menu lqd-custom-menu relative lqd-menu-td-none">
-                                <ul class="reset-ul inline-ul">
-                                    <li class="mr-25"><a href="#">Management</a></li>
-                                    <li class="mr-25"><a href="#">Reporting</a></li>
-                                    <li class="mr-25"><a href="#">Press</a></li>
-                                    <li class="mr-25"><a href="#">Company</a></li>
-                                    <li><a href="#">Careers</a></li>
-                                </ul>
-                            </div>
-                        </div> -->
+                        
                     </div>
                 </div>
             </section>
@@ -1336,6 +1216,7 @@
     <script src="assets/vendors/fontfaceobserver.js"></script>
     <script src="assets/js/liquid-gdpr.min.js"></script>
     <script src="assets/js/theme.min.js"></script>
+    <script src="assets/js/main.js"></script>
     <script src="assets/js/liquid-ajax-contact-form.min.js"></script>
     <div class="lqd-cc lqd-cc--inner fixed pointer-events-none"></div>
     <div
