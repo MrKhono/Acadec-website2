@@ -105,6 +105,11 @@
   
 }
 
+.service-container{
+  height: auto;
+}
+
 .service-content:last-child{
   padding-bottom: 100px;
 }
+

@@ -212,6 +212,27 @@ select {
   border-radius: 5px;
 }
 
-.about-description{
-  padding-top: 20px;
+.about-content{
+  display: flex;
 }
+
+.about-content .about-img {
+  flex-basis: 60%;
+  width: 800px;
+  height: 600px;
+  background-color: red;
+  background: url('https://img.freepik.com/free-photo/portrait-male-student-with-books_23-2148882426.jpg?t=st=1710760794~exp=1710764394~hmac=75e71d692b3a1c4a589c9bd8a29f5b673a51da0fc04e562f2e35e3c8b9cf764e&w=900');
+  background-size: cover;
+}
+
+.about-description{
+  margin-left: 60px;
+  margin-top: 80px;
+  width: 50%;
+}
+
+.about-description p{
+  margin-top: 30px;
+  line-height: 30px;
+}
+
